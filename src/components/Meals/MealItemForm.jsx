@@ -3,7 +3,10 @@ import classes from './MealItemForm.module.css'
 
 function MealItemForm() {
   return (
-    <div>MealItemForm</div>
+    <form className={classes.form}>
+      <input />
+      <button>+ Add</button>
+    </form>
   )
 }
 
