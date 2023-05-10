@@ -3,18 +3,18 @@ import classes from './MealItem.module.css'
 
 function MealItem(props) {
 
-    const price = `$${props.price.toFixed(2)}`
-    const text = `hello ${priyanshu}`
-    console.log(text)
+    const price = `$${props.price.toFixed(2)}`;
 
   return (
-    <li>
+    <li className={classes.meal}>
         <div>
             <h3>{props.name}</h3>
-            <div>{props.description}</div>
-            <div>{props.price}</div>
+            <div className={classes.description}>{props.description}</div>
+            <div className={classes.price}>{props.price}</div>
         </div>
-        <div></div>
+        <div>
+
+        </div>
     </li>
   )
 }
